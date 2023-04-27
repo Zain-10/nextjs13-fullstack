@@ -5,14 +5,14 @@ import MovieCard from "@/app/components/MovieCard";
 const page = async() => {
 
   const url = process.env.RAPID_KEY;
-const options = {
-  method: 'GET',
-  headers: {
-    'content-type': 'application/octet-stream',
-    'X-RapidAPI-Key': '09253f919emshb0f68cb50a004e4p198011jsna6189b6ed073',
-    'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
-  }
-};
+  const options = {
+    method: 'GET',
+    headers: {
+      'content-type': 'application/octet-stream',
+      'X-RapidAPI-Key': '09253f919emshb0f68cb50a004e4p198011jsna6189b6ed073',
+      'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
+    }
+  };
 
   const res = await fetch(url,options)
   const data = await res.json()
